@@ -1,116 +1,2039 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<script type="text/javascript" src="//api.wukongtongji.com/c?_=894121797838839808" async></script><head>
+<head>
+<script type="text/javascript" src="//api.wukongtongji.com/c?_=894121797838839808" async></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>代理记账.cn - 专业代理记账、工商注册、税务筹划、财税咨询服务平台</title>
-<meta name="keywords" content="代理记账,代理记账公司,工商注册,纳税申报,税务筹划,财税咨询,公司注册,记账报税,社保代缴,企业财税服务">
-<meta name="description" content="代理记账.cn专注为中小企业提供代理记账、工商注册、纳税申报、税务筹划、财税咨询、社保公积金等一站式企业财税服务，专业团队、安全合规、价格透明，助力企业安心经营。">
+<title>代理记账.cn - 专业代理记账资讯与财税服务平台</title>
+<meta name="keywords" content="代理记账,代理记账公司,工商注册,纳税申报,税务筹划,财税咨询,公司注册,记账报税,社保代缴,企业财税服务,代理记账资讯,财税政策">
+<meta name="description" content="代理记账.cn提供最新代理记账资讯、财税政策解读、企业报税指南，专注为中小企业提供代理记账、工商注册、纳税申报、税务筹划等一站式企业财税服务。">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",sans-serif}
-body{background:#f7f8fa;color:#333;line-height:1.6}
-.header{background:#1a2b48;color:#fff;padding:20px 0;text-align:center}
-.logo{font-size:28px;font-weight:700}
-.tagline{font-size:16px;color:#c0c6d6;margin-top:5px}
-.banner{background:linear-gradient(135deg,#2c3e50,#4ca1af);color:#fff;padding:60px 20px;text-align:center}
-.banner h1{font-size:32px;margin-bottom:15px}
-.banner p{font-size:18px;max-width:800px;margin:0 auto 25px}
-.btn{display:inline-block;background:#ff7d00;color:#fff;padding:14px 30px;border-radius:6px;font-size:16px;text-decoration:none;font-weight:700}
-.btn:hover{background:#e67000}
-.container{max-width:1000px;margin:0 auto;padding:40px 20px}
-.section{margin-bottom:50px}
-.section h2{text-align:center;font-size:26px;color:#222;margin-bottom:30px;position:relative}
-.section h2::after{content:"";width:60px;height:3px;background:#4ca1af;display:block;margin:10px auto 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:#fff;border-radius:10px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,0.05)}
-.card h3{font-size:20px;color:#2c3e50;margin-bottom:12px}
-.card p{color:#666;font-size:15px}
-.contact{background:#1a2b48;color:#fff;text-align:center;padding:50px 20px}
-.contact h2{margin-bottom:20px}
-.tel{font-size:26px;font-weight:700;color:#ff7d00;margin:20px 0}
-.footer{text-align:center;padding:25px;background:#fff;font-size:14px;color:#666}
-.beian{margin-top:8px;font-size:13px;color:#888}
+:root {
+  --navy: #1a2b4a;
+  --navy-light: #2c4270;
+  --gold: #c9a961;
+  --gold-light: #e0c98f;
+  --cream: #f8f6f1;
+  --cream-dark: #f0ece3;
+  --text: #2a2a2a;
+  --text-light: #666;
+  --text-muted: #999;
+  --border: #e0dcd4;
+  --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Noto Serif SC', Georgia, serif;
+  color: var(--navy);
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== 顶部导航 ===== */
+.header {
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(26,43,74,0.15);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--gold);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--navy);
+}
+
+.logo-text {
+  color: var(--white);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo-text span { color: var(--gold); }
+
+.nav {
+  display: flex;
+  gap: 36px;
+}
+
+.nav a {
+  color: rgba(255,255,255,0.85);
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav a:hover, .nav a.active {
+  color: var(--gold);
+}
+
+.nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gold);
+}
+
+.header-cta {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.header-cta:hover { background: var(--gold-light); }
+
+/* ===== Hero区 ===== */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 80px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201,169,97,0.12) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(201,169,97,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201,169,97,0.15);
+  border: 1px solid rgba(201,169,97,0.3);
+  color: var(--gold-light);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.hero p {
+  color: rgba(255,255,255,0.75);
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 36px;
+  max-width: 560px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.hero-stat .num {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.hero-stat .label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 4px;
+}
+
+/* ===== 最新资讯 ===== */
+.section {
+  padding: 72px 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 16px;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 4px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.section-more {
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s;
+}
+
+.section-more:hover { gap: 10px; color: var(--gold); }
+
+/* 文章列表 - 特色大卡 + 网格 */
+.news-featured {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.news-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(26,43,74,0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(26,43,74,0.12);
+}
+
+.news-card-featured {
+  grid-row: span 2;
+}
+
+.news-card-image {
+  height: 200px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.news-card-featured .news-card-image {
+  height: 280px;
+}
+
+.news-card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a961' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.news-card-icon {
+  position: relative;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  background: rgba(201,169,97,0.2);
+  border: 2px solid rgba(201,169,97,0.4);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-card-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.news-card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card-tag {
+  display: inline-block;
+  background: var(--cream-dark);
+  color: var(--navy);
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  align-self: flex-start;
+  font-weight: 500;
+}
+
+.news-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: var(--navy);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-card-featured .news-card-title {
+  font-size: 22px;
+}
+
+.news-card-excerpt {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.news-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.news-card-meta .date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.news-card-meta .views {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ===== 服务专区 ===== */
+.services {
+  background: var(--white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  text-align: center;
+  padding: 36px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.25s;
+}
+
+.service-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 8px 24px rgba(201,169,97,0.12);
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
+  background: var(--cream);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.service-card h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ===== 关于我们 ===== */
+.about {
+  background: var(--cream-dark);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: var(--text-light);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.about-feature {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.about-feature-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--navy);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-feature-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 2;
+}
+
+.about-feature-text h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.about-feature-text p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.about-visual {
+  background: var(--navy);
+  border-radius: 12px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-visual::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(201,169,97,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.about-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-stat {
+  text-align: center;
+  padding: 24px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.about-stat .num {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.about-stat .label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 6px;
+}
+
+/* ===== 页脚 ===== */
+.footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.7);
+  padding: 56px 0 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand .logo-text {
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.footer-brand p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-col h4 {
+  color: var(--white);
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  transition: color 0.2s;
+}
+
+.footer-col a:hover { color: var(--gold); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+}
+
+/* ===== 文章详情页 ===== */
+.article-page {
+  display: none;
+  padding: 48px 0;
+}
+
+.article-page.active { display: block; }
+
+.article-home { display: block; }
+.article-home.hidden { display: none; }
+
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--navy);
+  font-size: 14px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.article-back:hover { color: var(--gold); }
+
+.article-header {
+  margin-bottom: 36px;
+}
+
+.article-tag {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--gold);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.article-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+  color: var(--text-muted);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-meta .author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.article-content {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--text);
+}
+
+.article-content h2 {
+  font-size: 22px;
+  margin: 36px 0 16px;
+  padding-left: 12px;
+  border-left: 4px solid var(--gold);
+}
+
+.article-content h3 {
+  font-size: 18px;
+  margin: 28px 0 12px;
+}
+
+.article-content p {
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.article-content ul, .article-content ol {
+  margin: 16px 0 16px 24px;
+}
+
+.article-content li {
+  margin-bottom: 10px;
+}
+
+.article-content blockquote {
+  background: var(--cream-dark);
+  border-left: 4px solid var(--gold);
+  padding: 16px 24px;
+  margin: 24px 0;
+  font-size: 15px;
+  color: var(--text-light);
+  border-radius: 0 6px 6px 0;
+}
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.article-content th {
+  background: var(--navy);
+  color: var(--white);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.article-content td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-content tr:nth-child(even) td {
+  background: var(--cream);
+}
+
+.article-footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.article-tags span {
+  background: var(--cream-dark);
+  color: var(--text-light);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 3px;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 968px) {
+  .nav { display: none; }
+  .hero h1 { font-size: 32px; }
+  .news-featured { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 48px 0 64px; }
+  .hero h1 { font-size: 26px; }
+  .hero-stats { gap: 24px; flex-wrap: wrap; }
+  .news-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .article-title { font-size: 24px; }
+  .section-title { font-size: 24px; }
+}
 </style>
 </head>
-
 <body>
 
-<div class="header">
-    <div class="logo">代理记账.cn</div>
-    <div class="tagline">专业财税服务 · 助力企业成长</div>
-</div>
-
-<div class="banner">
-    <h1>工商注册 · 代理记账 · 税务筹划 · 财税咨询</h1>
-    <p>专注为中小企业提供安全、合规、高效的代理记账服务，让您专心经营，财税交给专业团队。</p>
-    <a href="#contact" class="btn">立即咨询</a>
-</div>
-
-<div class="container">
-
-    <section class="section">
-        <h2>我们的服务</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>代理记账</h3>
-                <p>月度记账、凭证整理、报表出具、规范账务，让企业财税清晰合规。</p>
-            </div>
-            <div class="card">
-                <h3>纳税申报</h3>
-                <p>增值税、附加税、企业所得税、个税申报，准时无误不逾期。</p>
-            </div>
-            <div class="card">
-                <h3>工商注册</h3>
-                <p>公司注册、变更、注销、营业执照办理，一站式快速办理。</p>
-            </div>
-            <div class="card">
-                <h3>税务筹划</h3>
-                <p>合法合规降低税负，优化企业财税结构，规避经营风险。</p>
-            </div>
-            <div class="card">
-                <h3>财税咨询</h3>
-                <p>专业会计师一对一解答，政策解读、风险预警、常年顾问服务。</p>
-            </div>
-            <div class="card">
-                <h3>社保公积金</h3>
-                <p>企业社保开户、代缴、增减员，规范用工，省心省力。</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>我们的优势</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>专业团队</h3>
-                <p>多年会计师经验，熟悉最新财税政策，专业可靠。</p>
-            </div>
-            <div class="card">
-                <h3>安全合规</h3>
-                <p>严格保密企业信息，账务规范，降低税务风险。</p>
-            </div>
-            <div class="card">
-                <h3>价格透明</h3>
-                <p>无隐形消费，收费公开合理，服务内容清晰明确。</p>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-<div id="contact" class="contact">
-    <h2>联系我们</h2>
-    <p>专业财税顾问一对一服务，欢迎随时咨询</p>
-    <div class="tel" style="font-size:26px;font-weight:700;color:#ff7d00;margin:20px 0;">
-        <a href="tel:17652523536" style="color:#ff7d00;text-decoration:none;">176 5252 3536</a>
-    </div>
-    <a href="tel:17652523536" class="btn" style="display:inline-block;background:#ff7d00;color:#fff;padding:14px 30px;border-radius:6px;font-size:16px;text-decoration:none;font-weight:700;">
-        立即拨打
+<!-- ===== 顶部导航 ===== -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="#/" class="logo">
+      <div class="logo-icon">代</div>
+      <div class="logo-text">代理记账<span>.cn</span></div>
     </a>
-</div>
+    <nav class="nav">
+      <a href="#/" class="active">首页</a>
+      <a href="#/news">最新资讯</a>
+      <a href="#/services">服务专区</a>
+      <a href="#/about">关于我们</a>
+    </nav>
+    <a href="#/services" class="header-cta">免费咨询</a>
+  </div>
+</header>
 
+<!-- ===== 首页 ===== -->
+<main id="home" class="article-home">
 
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">2026年最新财税政策实时更新</div>
+        <h1>专业代理记账资讯平台<br>助力企业<em>合规经营</em>与财税优化</h1>
+        <p>代理记账.cn专注为中小企业提供最新财税政策解读、代理记账实务指南、税务合规方案，让每一位创业者都能轻松掌握企业财务命脉。</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">5000+</div>
+            <div class="label">服务企业</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">12年</div>
+            <div class="label">行业经验</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">98%</div>
+            <div class="label">客户满意度</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- 最新资讯 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">最新资讯</h2>
+          <div class="section-subtitle">每日更新代理记账与财税政策前沿动态</div>
+        </div>
+        <a href="#/news" class="section-more">查看全部 →</a>
+      </div>
 
+      <div class="news-featured" id="featured-news">
+        <!-- 特色文章由JS渲染 -->
+      </div>
 
+      <div class="news-grid" id="news-grid">
+        <!-- 文章列表由JS渲染 -->
+      </div>
+    </div>
+  </section>
 
+  <!-- 服务专区 -->
+  <section class="section services">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">服务专区</h2>
+          <div class="section-subtitle">一站式企业财税服务解决方案</div>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>代理记账</h3>
+          <p>专业会计团队全程托管，做账报税零差错，企业财务一目了然。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>税务申报</h3>
+          <p>增值税、企业所得税、个税等全税种申报，准时准确零逾期。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>工商年报</h3>
+          <p>企业年度报告公示、工商变更、注销清算全流程代办服务。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>财税筹划</h3>
+          <p>合法合规税务筹划，优化企业税负结构，实现效益最大化。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>关于代理记账.cn</h2>
+          <p>代理记账.cn是国内领先的企业财税资讯与服务平台，深耕代理记账行业十余年，汇聚资深注册会计师、税务师团队，为全国中小企业提供专业、高效、可信赖的财税服务。</p>
+          <p>我们始终坚持"专业、严谨、高效、保密"的服务理念，以最新政策为导向，以企业需求为核心，助力每一位创业者轻松应对财税挑战，专注业务发展。</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="about-feature-text">
+                <h4>专业资质</h4>
+                <p>注册会计师/税务师团队</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="about-feature-text">
+                <h4>实时更新</h4>
+                <p>政策动态第一时间解读</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="about-feature-text">
+                <h4>数据安全</h4>
+                <p>严格保密企业财务信息</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="about-feature-text">
+                <h4>全程服务</h4>
+                <p>一对一专属会计顾问</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-stat-grid">
+            <div class="about-stat">
+              <div class="num">5000+</div>
+              <div class="label">累计服务企业</div>
+            </div>
+            <div class="about-stat">
+              <div class="num">12年</div>
+              <div class="label">行业深耕经验</div>
+            </div>
+            <div class="about-stat">
+              <div class="num">30+</div>
+              <div class="label">专业会计团队</div>
+            </div>
+            <div class="about-stat">
+              <div class="num">0</div>
+              <div class="label">重大差错记录</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== 文章详情页 ===== -->
+<article id="article-page" class="article-page">
+  <div class="container">
+    <div class="article-container">
+      <a class="article-back" onclick="goHome()">← 返回首页</a>
+      <div id="article-content">
+        <!-- 文章内容由JS渲染 -->
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">代理记账<span style="color:var(--gold)">.cn</span></span>
+        <p>专业代理记账资讯与财税服务平台，致力于为中小企业提供最新财税政策解读与一站式企业财税服务。</p>
+        <p style="margin-top:16px; color: var(--gold); font-size: 18px; font-weight: 700;">咨询热线：176 5252 3536</p>
+      </div>
+      <div class="footer-col">
+        <h4>资讯分类</h4>
+        <ul>
+          <li><a href="#/news">政策解读</a></li>
+          <li><a href="#/news">记账实务</a></li>
+          <li><a href="#/news">税务合规</a></li>
+          <li><a href="#/news">工商年报</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>服务项目</h4>
+        <ul>
+          <li><a href="#/services">代理记账</a></li>
+          <li><a href="#/services">税务申报</a></li>
+          <li><a href="#/services">工商注册</a></li>
+          <li><a href="#/services">财税筹划</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#/about">平台介绍</a></li>
+          <li><a href="#/about">团队资质</a></li>
+          <li><a href="#/services">联系我们</a></li>
+          <li><a href="#/about">服务承诺</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 代理记账.cn 版权所有</div>
+      <div>专业财税服务 · 值得信赖</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== 文章数据 =====
+const articles = [
+  {
+    id: 1,
+    title: "2026年小规模纳税人增值税优惠政策全解读",
+    tag: "政策解读",
+    date: "2026-09-03",
+    views: 3286,
+    excerpt: "2026年小规模纳税人增值税减免政策延续实施，月销售额10万元以下免征增值税，适用3%征收率的应税销售收入减按1%征收。本文详细解读政策适用范围、申报要点及注意事项。",
+    content: `
+      <p>2026年，国家继续实施小规模纳税人增值税优惠政策，旨在进一步支持小微企业和个体工商户发展。本文将从政策内容、适用范围、申报操作三个维度进行全面解读。</p>
+      
+      <h2>一、政策核心内容</h2>
+      <p>根据财政部、税务总局联合发布的公告，2026年小规模纳税人增值税优惠政策主要包括以下两项：</p>
+      <ul>
+        <li><strong>免征政策</strong>：对月销售额10万元以下（含本数）的增值税小规模纳税人，免征增值税。</li>
+        <li><strong>减征政策</strong>：增值税小规模纳税人适用3%征收率的应税销售收入，减按1%征收率征收增值税；适用3%预征率的预缴增值税项目，减按1%预征率预缴增值税。</li>
+      </ul>
+      
+      <h2>二、政策适用范围</h2>
+      <h3>2.1 纳税人范围</h3>
+      <p>政策适用于所有增值税小规模纳税人，包括企业、个体工商户和其他个人。需要注意的是，一般纳税人不能适用此政策。</p>
+      
+      <h3>2.2 销售额计算口径</h3>
+      <p>免征增值税的销售额以差额后的销售额确定。适用增值税差额征税政策的小规模纳税人，以差额后的销售额确定是否可以享受免征政策。</p>
+      
+      <blockquote>
+        <p>举例说明：某小规模纳税人2026年第一季度提供劳务派遣服务，取得含税销售收入31.5万元，代用工单位支付给劳务派遣员工的工资、福利和为其办理社会保险及住房公积金共计20万元。差额后的销售额为11万元（含税），换算为不含税销售额为10.89万元，超过季度30万元免税标准，需按1%征收率缴纳增值税。</p>
+      </blockquote>
+      
+      <h2>三、申报操作要点</h2>
+      <h3>3.1 纳税申报期限</h3>
+      <p>小规模纳税人可以选择按月或按季申报纳税，一经选择，一个会计年度内不得变更。按季申报的纳税人，季度销售额未超过30万元的，免征增值税。</p>
+      
+      <h3>3.2 申报表填写</h3>
+      <table>
+        <tr><th>情形</th><th>填写栏次</th><th>备注</th></tr>
+        <tr><td>月销售额≤10万（季≤30万）</td><td>主表第10栏"小微企业免税销售额"</td><td>个体工商户填第11栏</td></tr>
+        <tr><td>月销售额>10万（季>30万）</td><td>主表第1栏"应征增值税不含税销售额"</td><td>征收率选1%</td></tr>
+        <tr><td>开具专用发票部分</td><td>主表第2栏"税务机关代开的增值税专用发票不含税销售额"</td><td>专票部分不免税</td></tr>
+      </table>
+      
+      <h2>四、常见问题解答</h2>
+      <h3>Q1：开具了增值税专用发票还能享受免税吗？</h3>
+      <p>A：开具增值税专用发票的部分需要按规定缴纳增值税，不能享受免税政策。但未开具专票的部分，如符合条件仍可享受免税。</p>
+      
+      <h3>Q2：政策到期后会延续吗？</h3>
+      <p>A：目前政策执行期限为2026年12月31日。后续是否延续需关注财政部、税务总局的最新公告，代理记账.cn将第一时间为您解读。</p>
+      
+      <h3>Q3：小规模纳税人可以放弃免税吗？</h3>
+      <p>A：纳税人可以选择放弃免税，按照3%征收率开具专用发票并缴纳增值税。但放弃免税后，36个月内不得再申请免税。</p>
+      
+      <h2>五、代理记账服务建议</h2>
+      <p>对于小规模纳税人而言，准确把握政策要点、规范做好账务处理和纳税申报至关重要。建议委托专业代理记账机构，由资深会计团队负责日常账务处理和税务申报，确保企业充分享受政策红利的同时，规避税务风险。</p>
+    `
+  },
+  {
+    id: 2,
+    title: "代理记账vs全职会计：中小企业成本与效率深度对比",
+    tag: "记账实务",
+    date: "2026-09-02",
+    views: 2847,
+    excerpt: "中小企业在财务人员配置上常面临选择：聘请全职会计还是委托代理记账？本文从成本、效率、专业性、风险控制四个维度进行深度对比分析，帮助企业做出最优决策。",
+    content: `
+      <p>对于大多数中小企业而言，财务管理是企业运营中不可或缺的一环。然而，在财务人员的配置上，企业主往往面临一个经典选择：聘请全职会计还是委托专业代理记账机构？本文将从多个维度进行深度对比。</p>
+      
+      <h2>一、成本对比</h2>
+      <h3>1.1 全职会计成本</h3>
+      <p>以二三线城市为例，聘请一名具备3-5年经验的全职会计，综合成本如下：</p>
+      <table>
+        <tr><th>成本项目</th><th>金额（元/月）</th><th>备注</th></tr>
+        <tr><td>基本工资</td><td>6000-8000</td><td>视城市和经验而定</td></tr>
+        <tr><td>社保公积金</td><td>1800-2400</td><td>企业承担部分</td></tr>
+        <tr><td>年终奖</td><td>500-700</td><td>按月均摊</td></tr>
+        <tr><td>办公设备及软件</td><td>200-300</td><td>财务软件、电脑折旧</td></tr>
+        <tr><td>培训及其他</td><td>100-200</td><td>继续教育、培训费用</td></tr>
+        <tr><td><strong>合计</strong></td><td><strong>8600-11600</strong></td><td>年均约10-14万元</td></tr>
+      </table>
+      
+      <h3>1.2 代理记账成本</h3>
+      <p>代理记账费用根据企业类型和业务量有所不同：</p>
+      <table>
+        <tr><th>企业类型</th><th>月费用（元）</th><th>年费用（元）</th></tr>
+        <tr><td>小规模纳税人（零申报）</td><td>100-200</td><td>1200-2400</td></tr>
+        <tr><td>小规模纳税人（有业务）</td><td>200-400</td><td>2400-4800</td></tr>
+        <tr><td>一般纳税人</td><td>400-800</td><td>4800-9600</td></tr>
+        <tr><td>外资/进出口企业</td><td>800-1500</td><td>9600-18000</td></tr>
+      </table>
+      
+      <blockquote>
+        <p>成本结论：代理记账的年费用仅为全职会计的1/10到1/5，对于业务量不大的中小企业，成本优势极为明显。</p>
+      </blockquote>
+      
+      <h2>二、专业性对比</h2>
+      <h3>2.1 全职会计的专业性特点</h3>
+      <ul>
+        <li><strong>优势</strong>：熟悉企业具体业务，能深入了解企业运营细节；可随时沟通，响应速度快。</li>
+        <li><strong>劣势</strong>：个人知识结构有限，难以覆盖所有财税领域；一人在岗，缺乏复核机制；离职风险高，交接不当易造成财务混乱。</li>
+      </ul>
+      
+      <h3>2.2 代理记账的专业性特点</h3>
+      <ul>
+        <li><strong>优势</strong>：团队协作，涵盖注册会计师、税务师等多领域专业人才；多人复核，差错率低；持续关注政策变化，专业更新及时。</li>
+        <li><strong>劣势</strong>：对企业业务细节的了解需要时间积累；沟通需通过约定渠道。</li>
+      </ul>
+      
+      <h2>三、效率与稳定性对比</h2>
+      <h3>3.1 工作效率</h3>
+      <p>全职会计因熟悉企业情况，日常处理效率较高。但在面对政策变化、复杂税务问题时，可能因个人能力局限而效率下降。代理记账机构因团队分工明确、流程标准化，在常规账务处理上效率稳定，在复杂问题处理上更具优势。</p>
+      
+      <h3>3.2 服务稳定性</h3>
+      <p>全职会计面临请假、离职等风险，一旦关键岗位人员变动，企业财务工作可能陷入停滞。代理记账机构以团队形式提供服务，人员变动不会影响服务连续性，稳定性更有保障。</p>
+      
+      <h2>四、风险控制对比</h2>
+      <h3>4.1 差错风险</h3>
+      <p>全职会计单人操作，缺乏内部复核，出现差错的概率相对较高，且差错可能长期未被发现。代理记账机构通常建立多级复核机制，从制单、审核到报税，层层把关，差错率显著降低。</p>
+      
+      <h3>4.2 合规风险</h3>
+      <p>财税政策更新频繁，全职会计可能因信息渠道有限而未能及时掌握最新政策，导致企业税务合规风险。专业代理记账机构设有专门的政策研究团队，能第一时间解读政策并调整账务处理方式。</p>
+      
+      <h3>4.3 保密风险</h3>
+      <p>全职会计掌握企业核心财务信息，离职时存在信息泄露风险。正规代理记账机构与客户签订保密协议，建立严格的信息安全管理制度，保密更有保障。</p>
+      
+      <h2>五、选择建议</h2>
+      <table>
+        <tr><th>企业情况</th><th>推荐方案</th><th>理由</th></tr>
+        <tr><td>初创期、业务量小</td><td>代理记账</td><td>成本敏感，需求简单</td></tr>
+        <tr><td>成长期、业务逐步增多</td><td>代理记账+财务顾问</td><td>兼顾成本与专业深度</td></tr>
+        <tr><td>成熟期、业务复杂</td><td>全职会计+代理记账辅助</td><td>日常内部处理，复杂事项外包</td></tr>
+        <tr><td>集团化、多子公司</td><td>自建财务团队</td><td>管理需求复杂，需深度整合</td></tr>
+      </table>
+      
+      <p>综上所述，对于大多数中小企业而言，代理记账是兼具成本效益和专业保障的优选方案。企业可根据自身发展阶段和业务复杂度，灵活选择适合的财务管理模式。</p>
+    `
+  },
+  {
+    id: 3,
+    title: "2026年企业工商年报申报流程与注意事项",
+    tag: "工商年报",
+    date: "2026-09-01",
+    views: 2156,
+    excerpt: "每年1月1日至6月30日是企业工商年报申报期。本文详细梳理2026年工商年报的申报流程、填报内容、常见错误及逾期后果，帮助企业顺利完成年报公示。",
+    content: `
+      <p>根据《企业信息公示暂行条例》规定，企业应当于每年1月1日至6月30日，通过国家企业信用信息公示系统报送上一年度年度报告并向社会公示。2026年的年报申报工作已经启动，本文为您详细梳理全流程。</p>
+      
+      <h2>一、哪些企业需要申报年报</h2>
+      <p>以下市场主体均需按规定报送年度报告：</p>
+      <ul>
+        <li>有限责任公司、股份有限公司</li>
+        <li>非公司企业法人、合伙企业、个人独资企业</li>
+        <li>个体工商户</li>
+        <li>农民专业合作社</li>
+        <li>外国（地区）企业常驻代表机构</li>
+      </ul>
+      <p>注意：当年设立登记的企业，自下一年起报送并公示年度报告。例如2026年新成立的企业，2027年才需要报送2026年度报告。</p>
+      
+      <h2>二、年报申报时间</h2>
+      <p><strong>申报期限</strong>：每年1月1日至6月30日</p>
+      <p><strong>申报年度</strong>：上一年度（2026年申报的是2025年度报告）</p>
+      <p>建议企业尽早完成申报，避免在6月下旬集中申报导致系统拥堵。逾期未申报将被列入经营异常名录。</p>
+      
+      <h2>三、申报流程详解</h2>
+      <h3>步骤一：登录公示系统</h3>
+      <p>访问国家企业信用信息公示系统（www.gsxt.gov.cn），点击"企业信息填报"，选择企业所在省份，通过营业执照注册号/统一社会信用代码和工商联络员身份证号登录。</p>
+      
+      <h3>步骤二：填写年报信息</h3>
+      <p>登录后选择"年度报告填写"，依次填写以下内容：</p>
+      <ol>
+        <li><strong>企业基本信息</strong>：企业名称、注册号、法定代表人、联系电话、电子邮箱、经营状态等。</li>
+        <li><strong>股东及出资信息</strong>：股东姓名/名称、认缴出资额、实缴出资额、出资时间、出资方式。</li>
+        <li><strong>网站或网店信息</strong>：如有网站或网店，需填报名称和网址。</li>
+        <li><strong>股权变更信息</strong>：报告期内发生股权变更的，需填报变更信息。</li>
+        <li><strong>资产状况信息</strong>：资产总额、负债总额、营业总收入、主营业务收入、利润总额、净利润、纳税总额。此项可选择是否公示。</li>
+        <li><strong>对外担保信息</strong>：对外提供保证担保的情况。</li>
+        <li><strong>社保信息</strong>：参保人数、社保缴费基数、实际缴费金额、欠缴金额。</li>
+        <li><strong>统计信息</strong>：部分地区要求填报统计相关数据。</li>
+      </ol>
+      
+      <h3>步骤三：预览并公示</h3>
+      <p>填写完成后，点击"预览并公示"，核对所有信息无误后，点击"提交并公示"。提交成功后，年报信息即向社会公示。</p>
+      
+      <h2>四、常见填报错误</h2>
+      <table>
+        <tr><th>错误类型</th><th>具体表现</th><th>正确做法</th></tr>
+        <tr><td>资产数据错误</td><td>填报数与财务报表不一致</td><td>以审计后/结账后的财务报表为准</td></tr>
+        <tr><td>股东出资信息遗漏</td><td>只填认缴未填实缴</td><td>认缴和实缴信息都需完整填报</td></tr>
+        <tr><td>社保数据不准确</td><td>缴费基数与实际不符</td><td>以社保部门核定数据为准</td></tr>
+        <tr><td>联系信息失效</td><td>电话、邮箱无法联系</td><td>填写当前有效的联系方式</td></tr>
+        <tr><td>经营状态误填</td><td>停业/清算企业填为开业</td><td>如实填报实际经营状态</td></tr>
+      </table>
+      
+      <h2>五、逾期未申报的后果</h2>
+      <blockquote>
+        <p>企业未按照规定期限公示年度报告的，由县级以上工商行政管理部门列入经营异常名录，并通过企业信用信息公示系统向社会公示。</p>
+      </blockquote>
+      <p>被列入经营异常名录的影响：</p>
+      <ul>
+        <li>在政府采购、工程招投标、国有土地出让、授予荣誉称号等工作中被限制或禁入</li>
+        <li>银行信贷、融资担保等金融服务受限</li>
+        <li>企业法定代表人、负责人在3年内不得担任其他企业的法定代表人、负责人</li>
+        <li>被列入经营异常名录满3年仍未履行公示义务的，列入严重违法失信企业名单</li>
+      </ul>
+      
+      <h2>六、年报修改与更正</h2>
+      <p>企业发现年报公示信息不准确的，可以在当年6月30日前通过公示系统进行更正。更正前后的信息同时公示。6月30日后，年报信息不得修改。</p>
+      <p>如确有特殊原因需要修改已公示的年报，需向登记机关提出书面申请，经审批后方可修改。</p>
+      
+      <h2>七、代理记账机构的服务价值</h2>
+      <p>工商年报申报涉及企业财务、社保、股权等多方面信息，填报要求严格、专业性强。委托代理记账机构办理年报申报，可由专业人员核对财务数据、准确填报各项信息，确保年报及时、准确完成，避免因填报错误或逾期申报给企业带来不必要的信用损失。</p>
+    `
+  },
+  {
+    id: 4,
+    title: "个体工商户记账报税：常见误区与合规指南",
+    tag: "记账实务",
+    date: "2026-08-31",
+    views: 1987,
+    excerpt: "很多个体户认为"个体户不用记账报税"，这是最大的误区。本文梳理个体工商户在记账报税中的六大常见误区，并提供完整的合规操作指南，帮助个体户规避税务风险。",
+    content: `
+      <p>在日常咨询中，我们发现很多个体工商户对记账报税存在认知误区，甚至有个体户因长期未申报纳税被税务机关处罚。本文将系统梳理常见误区，并提供合规操作指南。</p>
+      
+      <h2>误区一：个体户不需要记账</h2>
+      <p><strong>真相</strong>：个体工商户也需要按规定建立账簿。</p>
+      <p>根据《个体工商户建账管理暂行办法》，凡从事生产、经营并有固定生产、经营场所的个体工商户，都应当按照法律、行政法规和本办法的规定设置、使用和保管账簿及凭证，并根据合法、有效凭证记账核算。</p>
+      <table>
+        <tr><th>建账标准</th><th>适用情形</th></tr>
+        <tr><td>设置复式账</td><td>注册资金在20万元以上；销售增值税应税劳务的纳税人月销售额在40000元以上；从事货物生产的月销售额在60000元以上；从事货物批发或零售的月销售额在80000元以上</td></tr>
+        <tr><td>设置简易账</td><td>注册资金在10万元以上20万元以下；月销售额在15000元至40000元之间（劳务）、30000元至60000元（生产）、40000元至80000元（批发零售）</td></tr>
+      </table>
+      <p>达不到建账标准的个体户，经县以上税务机关批准，可按照税收征管法的规定，建立收支凭证粘贴簿、进货销货登记簿或者使用税控装置。</p>
+      
+      <h2>误区二：个体户不需要报税</h2>
+      <p><strong>真相</strong>：个体工商户必须按期申报纳税。</p>
+      <p>个体户在领取营业执照后，应在30日内办理税务登记，并按规定申报纳税。即使没有收入、享受免税政策，也需要进行零申报。</p>
+      <p>个体户主要涉及的税种：</p>
+      <ul>
+        <li><strong>增值税</strong>：小规模纳税人月销售额10万元以下免征，但仍需申报</li>
+        <li><strong>个人所得税</strong>：按"经营所得"缴纳，适用5%-35%超额累进税率</li>
+        <li><strong>附加税费</strong>：城建税、教育费附加、地方教育附加</li>
+        <li><strong>其他税费</strong>：如涉及消费税、房产税等也需按规定申报</li>
+      </ul>
+      
+      <h2>误区三：免税就不用申报</h2>
+      <p><strong>真相</strong>：免税不等于免申报。</p>
+      <p>很多个体户认为月销售额不到10万元可以免征增值税，就不需要报税了。这是错误的。免税政策的享受以如实申报为前提，不申报不仅无法证明你符合免税条件，还会因逾期申报被处罚。</p>
+      <blockquote>
+        <p>正确做法：即使销售额为零或符合免税条件，也必须在申报期内完成纳税申报，在申报表中如实填写销售额，系统会自动计算减免税额。</p>
+      </blockquote>
+      
+      <h2>误区四：个体户不会被查账</h2>
+      <p><strong>真相</strong>：个体户同样是税务稽查的对象。</p>
+      <p>随着金税四期的全面推进，税务监管越来越精准。个体户的以下行为容易被重点监控：</p>
+      <ul>
+        <li>长期零申报或申报收入明显偏低</li>
+        <li>开票金额与申报收入不符</li>
+        <li>个人账户收取经营款项未申报</li>
+        <li>虚开发票或接受虚开发票</li>
+        <li>经营场所与注册地址不符且未备案</li>
+      </ul>
+      <p>税务机关有权对个体户进行查账征收，一旦发现偷税漏税，将追缴税款、滞纳金并处以罚款。</p>
+      
+      <h2>误区五：个体户不用做工商年报</h2>
+      <p><strong>真相</strong>：个体工商户也需要报送年度报告。</p>
+      <p>个体工商户应当于每年1月1日至6月30日，通过国家企业信用信息公示系统报送上一年度年度报告。逾期未报送的，将被标记为经营异常状态并向社会公示。</p>
+      
+      <h2>误区六：不经营了不用注销</h2>
+      <p><strong>真相</strong>：不再经营的个体户应及时办理注销登记。</p>
+      <p>如果个体户不再经营，应及时到税务机关办理清税申报，再到市场监管部门办理注销登记。长期不经营也不注销，可能产生以下后果：</p>
+      <ul>
+        <li>被税务机关认定为非正常户，影响个人信用</li>
+        <li>被列入经营异常名录，影响经营者个人征信</li>
+        <li>营业执照被吊销，经营者3年内不得担任其他企业法定代表人</li>
+        <li>可能产生欠税和滞纳金</li>
+      </ul>
+      
+      <h2>合规操作指南</h2>
+      <h3>1. 税务登记</h3>
+      <p>领取营业执照后30日内，携带营业执照、经营者身份证、经营场所证明到主管税务机关办理税务登记，核定税种和征收方式。</p>
+      
+      <h3>2. 建账记账</h3>
+      <p>达到建账标准的个体户应按规定设置账簿，可自行记账或委托代理记账机构。达不到建账标准的，应建立收支凭证粘贴簿和进货销货登记簿。</p>
+      
+      <h3>3. 按期申报</h3>
+      <table>
+        <tr><th>税种</th><th>申报期限</th><th>申报方式</th></tr>
+        <tr><td>增值税及附加</td><td>按月/按季，期满后15日内</td><td>电子税务局网上申报</td></tr>
+        <tr><td>经营所得个税</td><td>按月/按季预缴，次年3月31日前汇算清缴</td><td>自然人电子税务局</td></tr>
+        <tr><td>其他税费</td><td>按税务机关核定的期限</td><td>电子税务局</td></tr>
+      </table>
+      
+      <h3>4. 发票管理</h3>
+      <p>按规定领购、开具、保管发票，不得虚开发票。开具发票应如实填写交易内容和金额。</p>
+      
+      <h3>5. 年度报告</h3>
+      <p>每年1月1日至6月30日报送上一年度年度报告，确保信息真实、准确、完整。</p>
+      
+      <h2>结语</h2>
+      <p>个体工商户虽然经营规模较小，但记账报税的法定义务与企业是一致的。建议个体户经营者重视财税合规，必要时委托专业代理记账机构处理账务和税务申报，以最低的成本实现合规经营，避免因小失大。</p>
+    `
+  },
+  {
+    id: 5,
+    title: "金税四期时代：企业税务合规的七大关键点",
+    tag: "税务合规",
+    date: "2026-08-30",
+    views: 4123,
+    excerpt: "金税四期全面上线后，税务监管从"以票管税"迈向"以数治税"。本文解析金税四期的监管逻辑，梳理企业税务合规的七大关键点，帮助企业主动适应新监管环境。",
+    content: `
+      <p>金税四期的全面上线标志着我国税收征管进入"以数治税"的新阶段。与金税三期相比，金税四期实现了更广泛的数据共享和更智能的风险识别，企业税务合规面临新的挑战。本文将解析金税四期的监管逻辑，并梳理企业必须关注的七大合规关键点。</p>
+      
+      <h2>一、金税四期的核心变化</h2>
+      <h3>1.1 从"以票管税"到"以数治税"</h3>
+      <p>金税三期主要通过发票管理实现税收监管，而金税四期则依托大数据、人工智能等技术，对企业的全量数据进行分析比对，实现从"发票控税"向"数据控税"的转变。</p>
+      
+      <h3>1.2 数据共享范围扩大</h3>
+      <p>金税四期实现了税务、银行、市场监管、社保、海关、公安等多部门数据共享，企业的经营数据、资金流向、人员信息等都在监管视野之内。</p>
+      
+      <h3>1.3 智能风险识别</h3>
+      <p>系统通过建立风险模型，自动识别企业的异常行为，如税负率异常、发票异常、资金流异常等，并推送风险预警。</p>
+      
+      <h2>二、企业税务合规七大关键点</h2>
+      
+      <h3>关键点一：发票管理合规</h3>
+      <p>发票始终是税务监管的核心。金税四期下，发票的全生命周期（开具、接收、抵扣、核销）都被实时监控。</p>
+      <ul>
+        <li><strong>虚开发票零容忍</strong>：没有真实交易而开具发票、开具与真实交易不符的发票，都将被系统识别</li>
+        <li><strong>发票内容与实际业务一致</strong>：品名、数量、金额必须与实际交易相符</li>
+        <li><strong>进项发票审核</strong>：收到发票后应及时查验真伪，避免接受虚开发票</li>
+        <li><strong>发票开具及时</strong>：纳税义务发生后应及时开具发票，不得延迟或提前</li>
+      </ul>
+      
+      <h3>关键点二：资金流向合规</h3>
+      <p>金税四期实现了税务与银行的数据共享，企业的资金流向受到严密监控。</p>
+      <ul>
+        <li><strong>公私账户分离</strong>：企业经营收入应进入企业账户，不得通过个人账户收取经营款项</li>
+        <li><strong>大额交易报备</strong>：单笔或当日累计大额资金交易将被重点关注</li>
+        <li><strong>资金流与发票流一致</strong>：付款方、收款方应与发票开具方、接收方一致</li>
+        <li><strong>关联交易定价公允</strong>：关联方之间的资金往来应符合独立交易原则</li>
+      </ul>
+      
+      <blockquote>
+        <p>特别提醒：通过个人微信、支付宝收取企业经营款项的行为，在金税四期下极易被识别。建议企业规范资金管理，所有经营收支通过企业账户进行。</p>
+      </blockquote>
+      
+      <h3>关键点三：纳税申报数据真实</h3>
+      <p>纳税申报数据是税务分析的基础。金税四期会对申报数据进行多维度比对：</p>
+      <ul>
+        <li>增值税申报收入与企业所得税申报收入比对</li>
+        <li>申报收入与发票开具金额比对</li>
+        <li>申报收入与银行流水比对</li>
+        <li>企业所得税工资薪金与个税申报、社保缴费基数比对</li>
+      </ul>
+      <p>各税种申报数据之间、申报数据与外部数据之间存在逻辑关系，任何不一致都可能触发风险预警。</p>
+      
+      <h3>关键点四：社保与个税合规</h3>
+      <p>社保费已由税务部门统一征收，金税四期实现了社保、个税、企业所得税的联动监管。</p>
+      <ul>
+        <li><strong>社保缴费基数与工资一致</strong>：不得按最低基数缴纳社保而实际发放更高工资</li>
+        <li><strong>全员全额申报个税</strong>：所有员工的工资薪金都应如实申报个税</li>
+        <li><strong>劳务报酬与工资薪金区分</strong>：不得将劳务报酬按工资薪金申报以降低税负</li>
+        <li><strong>年终奖等优惠政策合规使用</strong>：不得通过拆分收入等方式滥用优惠</li>
+      </ul>
+      
+      <h3>关键点五：成本费用列支合规</h3>
+      <p>成本费用直接影响企业所得税应纳税所得额，是税务稽查的重点。</p>
+      <ul>
+        <li><strong>凭证合法有效</strong>：列支成本费用必须有合法有效的税前扣除凭证</li>
+        <li><strong>与生产经营相关</strong>：与企业生产经营无关的支出不得税前扣除</li>
+        <li><strong>扣除比例合规</strong>：业务招待费、广告费、职工福利费等有扣除限额的项目应按规定调整</li>
+        <li><strong>不得虚增成本</strong>：通过虚开发票、虚假合同等方式虚增成本将被严厉打击</li>
+      </ul>
+      
+      <h3>关键点六：税收优惠享受合规</h3>
+      <p>国家出台了大量税收优惠政策，但享受优惠必须符合条件并留存备查资料。</p>
+      <ul>
+        <li><strong>资格条件真实</strong>：高新技术企业、小型微利企业等资格必须真实符合条件</li>
+        <li><strong>留存备查资料完整</strong>：享受优惠的相关证明材料应按规定留存备查</li>
+        <li><strong>申报数据准确</strong>：优惠金额计算准确，申报栏次填写正确</li>
+        <li><strong>不得骗取优惠</strong>：通过虚假材料骗取税收优惠将被追缴税款并处罚</li>
+      </ul>
+      
+      <h3>关键点七：关联交易与转让定价合规</h3>
+      <p>对于有关联方交易的企业，转让定价是税务监管的重点领域。</p>
+      <ul>
+        <li>关联交易应符合独立交易原则</li>
+        <li>按规定准备同期资料</li>
+        <li>如实填报关联业务往来报告表</li>
+        <li>关注利润水平与行业均值的差异</li>
+      </ul>
+      
+      <h2>三、企业应对策略</h2>
+      <h3>3.1 建立税务合规管理体系</h3>
+      <p>企业应建立健全税务管理制度，明确各环节的税务合规要求，定期开展税务自查，及时发现和纠正问题。</p>
+      
+      <h3>3.2 规范财务核算</h3>
+      <p>规范的财务核算是税务合规的基础。企业应按照会计准则要求进行账务处理，确保财务数据真实、准确、完整。</p>
+      
+      <h3>3.3 借助专业力量</h3>
+      <p>对于中小企业而言，自建专业税务团队成本较高。委托专业代理记账机构，由资深会计和税务师团队负责日常账务处理和税务申报，是兼顾成本与合规的优选方案。</p>
+      
+      <h3>3.4 关注政策变化</h3>
+      <p>税收政策更新频繁，企业应持续关注最新政策动态，及时调整税务处理方式。代理记账.cn将第一时间为您解读最新财税政策。</p>
+      
+      <h2>结语</h2>
+      <p>金税四期时代，税务监管更加精准、智能，企业的税务合规成本上升，但合规带来的长期价值也更加显著。企业应主动适应新监管环境，建立合规意识，规范经营行为，在合法合规的前提下实现健康发展。</p>
+    `
+  },
+  {
+    id: 6,
+    title: "初创公司财税第一课：五个必知的基础概念",
+    tag: "记账实务",
+    date: "2026-08-29",
+    views: 1654,
+    excerpt: "创业维艰，财税知识是每位创业者的必修课。本文用通俗易懂的语言，讲解初创公司必须了解的五个财税基础概念：纳税人身份、税种、申报期限、发票管理和账务处理，帮助创业者避开财税陷阱。",
+    content: `
+      <p>很多创业者在创业初期将全部精力投入到产品和市场中，忽视了财税管理，直到遇到税务问题才追悔莫及。本文用通俗易懂的语言，为初创公司创始人讲解五个必知的财税基础概念。</p>
+      
+      <h2>概念一：纳税人身份——小规模纳税人和一般纳税人</h2>
+      <h3>1.1 什么是小规模纳税人</h3>
+      <p>小规模纳税人是指年应征增值税销售额在500万元及以下，并且会计核算不健全，不能按规定报送有关税务资料的增值税纳税人。</p>
+      <p>小规模纳税人的特点：</p>
+      <ul>
+        <li>增值税征收率为3%（目前减按1%）</li>
+        <li>月销售额10万元以下免征增值税</li>
+        <li>不能抵扣进项税额</li>
+        <li>可以开具增值税普通发票，专票需到税务机关代开或自行开具</li>
+      </ul>
+      
+      <h3>1.2 什么是一般纳税人</h3>
+      <p>一般纳税人是指年应征增值税销售额超过500万元，或虽未超过标准但会计核算健全、能提供准确税务资料的纳税人。</p>
+      <p>一般纳税人的特点：</p>
+      <ul>
+        <li>增值税税率为13%、9%、6%等（按行业不同）</li>
+        <li>可以抵扣进项税额</li>
+        <li>可以自行开具增值税专用发票</li>
+        <li>账务处理要求更规范</li>
+      </ul>
+      
+      <h3>1.3 初创公司如何选择</h3>
+      <table>
+        <tr><th>考虑因素</th><th>选择小规模</th><th>选择一般纳税人</th></tr>
+        <tr><td>客户类型</td><td>客户多为个人或小规模企业</td><td>客户多为一般纳税人，需要专票抵扣</td></tr>
+        <tr><td>进项发票</td><td>难以取得进项专票</td><td>能取得充足的进项专票</td></tr>
+        <tr><td>业务规模</td><td>年销售额预计500万以下</td><td>年销售额预计超过500万</td></tr>
+        <tr><td>行业特点</td><td>服务业、轻资产行业</td><td>贸易、制造业等进项较多的行业</td></tr>
+      </table>
+      <blockquote>
+        <p>提示：小规模纳税人满足条件可以转为一般纳税人，但一般纳税人不得转为小规模纳税人（特殊政策期除外）。选择时应结合企业发展规划综合考虑。</p>
+      </blockquote>
+      
+      <h2>概念二：企业主要涉及哪些税种</h2>
+      <h3>2.1 增值税</h3>
+      <p>增值税是对商品和服务在流转过程中产生的增值额征收的一种税。只要企业有销售收入，就涉及增值税。这是企业最常接触的税种。</p>
+      
+      <h3>2.2 企业所得税</h3>
+      <p>企业所得税是对企业的生产经营所得和其他所得征收的一种税。简单来说，就是企业赚钱了，利润部分需要缴纳企业所得税。</p>
+      <ul>
+        <li>标准税率：25%</li>
+        <li>小型微利企业：年应纳税所得额300万以下，实际税负5%</li>
+        <li>高新技术企业：15%</li>
+      </ul>
+      
+      <h3>2.3 个人所得税</h3>
+      <p>企业需要为员工代扣代缴工资薪金个人所得税。此外，企业向个人支付劳务报酬、股息红利等，也需要代扣代缴个税。</p>
+      
+      <h3>2.4 附加税费</h3>
+      <p>包括城市维护建设税（7%/5%/1%）、教育费附加（3%）、地方教育附加（2%），以实际缴纳的增值税为计税依据。</p>
+      
+      <h3>2.5 印花税</h3>
+      <p>对合同、产权转移书据、营业账簿等征收的税种。税率较低，但涉及面广。</p>
+      
+      <h2>概念三：纳税申报期限</h2>
+      <h3>3.1 增值税及附加税费</h3>
+      <ul>
+        <li>按月申报：每月15日前申报上月税款</li>
+        <li>按季申报：每季度终了后15日内申报上季度税款</li>
+      </ul>
+      
+      <h3>3.2 企业所得税</h3>
+      <ul>
+        <li>季度预缴：每季度终了后15日内</li>
+        <li>年度汇算清缴：次年5月31日前</li>
+      </ul>
+      
+      <h3>3.3 个人所得税</h3>
+      <ul>
+        <li>工资薪金：每月15日前代扣代缴申报</li>
+        <li>经营所得：按季预缴，次年3月31日前汇算清缴</li>
+      </ul>
+      
+      <h3>3.4 其他税费</h3>
+      <p>印花税按季或按次申报；房产税、城镇土地使用税按年或按季申报。具体以税务机关核定为准。</p>
+      
+      <blockquote>
+        <p>重要提醒：即使没有收入、不需要缴税，也必须在申报期内进行零申报。逾期申报将被处以罚款，还会影响企业纳税信用等级。</p>
+      </blockquote>
+      
+      <h2>概念四：发票管理</h2>
+      <h3>4.1 发票的种类</h3>
+      <ul>
+        <li><strong>增值税普通发票</strong>：不能抵扣进项税，作为成本费用入账凭证</li>
+        <li><strong>增值税专用发票</strong>：可以抵扣进项税，一般纳税人之间交易使用</li>
+        <li><strong>电子发票</strong>：与纸质发票具有同等法律效力，逐步全面推广</li>
+      </ul>
+      
+      <h3>4.2 开票注意事项</h3>
+      <ul>
+        <li>必须有真实交易才能开具发票，严禁虚开发票</li>
+        <li>发票内容应与实际交易一致，不得变更品名和金额</li>
+        <li>收到发票后应及时查验真伪，避免收到假发票</li>
+        <li>发票应妥善保管，丢失发票需按规定处理</li>
+      </ul>
+      
+      <h3>4.3 没有发票能不能入账</h3>
+      <p>会计上可以根据实际支出入账，但企业所得税税前扣除需要合法有效的凭证。如果没有取得发票，相关成本费用在企业所得税汇算清缴时需要做纳税调增。</p>
+      
+      <h2>概念五：账务处理基础</h2>
+      <h3>5.1 为什么要记账</h3>
+      <ul>
+        <li>法律要求：企业必须按规定设置会计账簿</li>
+        <li>税务需要：纳税申报的数据来源于账务记录</li>
+        <li>管理需要：了解企业财务状况和经营成果</li>
+        <li>融资需要：银行贷款、投资融资都需要财务报表</li>
+      </ul>
+      
+      <h3>5.2 记账的基本流程</h3>
+      <ol>
+        <li>收集原始凭证（发票、收据、银行回单等）</li>
+        <li>审核原始凭证的真实性、合法性、完整性</li>
+        <li>根据原始凭证编制记账凭证</li>
+        <li>登记会计账簿（总账、明细账等）</li>
+        <li>编制财务报表（资产负债表、利润表、现金流量表）</li>
+        <li>进行纳税申报</li>
+      </ol>
+      
+      <h3>5.3 初创公司的账务处理方式</h3>
+      <table>
+        <tr><th>方式</th><th>优点</th><th>缺点</th><th>适合企业</th></tr>
+        <tr><td>自己记账</td><td>成本最低</td><td>不专业，易出错，占用精力</td><td>业务极少的初创期</td></tr>
+        <tr><td>聘请全职会计</td><td>专人负责，熟悉业务</td><td>成本高，人员流动风险</td><td>业务较复杂的成长期</td></tr>
+        <tr><td>代理记账</td><td>专业、成本低、稳定</td><td>需选择靠谱机构</td><td>大多数中小企业</td></tr>
+      </table>
+      
+      <h2>给初创公司的财税建议</h2>
+      <ol>
+        <li><strong>注册后及时办理税务登记</strong>：领取营业执照后30日内必须办理</li>
+        <li><strong>开立企业银行账户</strong>：经营收支走企业账户，不要与个人账户混用</li>
+        <li><strong>规范发票管理</strong>：收入及时开票，支出尽量取得发票</li>
+        <li><strong>按时申报纳税</strong>：设置申报提醒，避免逾期</li>
+        <li><strong>委托专业代理记账</strong>：把专业的事交给专业的人，创始人专注业务发展</li>
+      </ol>
+      
+      <p>财税管理是企业健康发展的基石。初创公司创始人不必成为财税专家，但必须了解基本概念，建立合规意识，在专业人士的帮助下做好财税管理，为企业的长远发展保驾护航。</p>
+    `
+  },
+  {
+    id: 7,
+    title: "企业所得税汇算清缴：时间节点与关键操作",
+    tag: "税务合规",
+    date: "2026-08-28",
+    views: 1876,
+    excerpt: "每年5月31日前，企业需完成上一年度企业所得税汇算清缴。本文详解汇算清缴的时间节点、申报流程、纳税调整事项和常见风险点，帮助企业准确完成年度所得税申报。",
+    content: `
+      <p>企业所得税汇算清缴是企业年度财税工作的重头戏。每年5月31日前，企业需要对上一年度的企业所得税进行汇总计算、多退少补。本文将详细讲解汇算清缴的全流程和关键操作要点。</p>
+      
+      <h2>一、什么是企业所得税汇算清缴</h2>
+      <p>企业所得税汇算清缴，是指纳税人自纳税年度终了之日起5个月内，依照税收法律、法规、规章及其他有关企业所得税的规定，自行计算本纳税年度应纳税所得额和应纳所得税额，根据月度或季度预缴企业所得税的数额，确定该纳税年度应补或者应退税额，并填写年度企业所得税纳税申报表，向主管税务机关办理年度企业所得税纳税申报、提供税务机关要求提供的有关资料、结清全年企业所得税税款的行为。</p>
+      
+      <blockquote>
+        <p>简单理解：企业所得税按季度预缴，年度终了后算总账，多退少补。预缴时按会计利润计算，年度汇算时按税法规定调整，最终确定全年应缴税额。</p>
+      </blockquote>
+      
+      <h2>二、关键时间节点</h2>
+      <table>
+        <tr><th>时间</th><th>事项</th><th>备注</th></tr>
+        <tr><td>1月1日-5月31日</td><td>汇算清缴申报期</td><td>申报上一年度企业所得税</td></tr>
+        <tr><td>5月31日前</td><td>完成申报并结清税款</td><td>逾期申报将产生滞纳金和罚款</td></tr>
+        <tr><td>申报期内</td><td>可更正申报</td><td>发现错误可在5月31日前更正</td></tr>
+        <tr><td>5月31日后</td><td>补充申报</td><td>需缴纳滞纳金（按日万分之五）</td></tr>
+      </table>
+      
+      <h2>三、汇算清缴申报流程</h2>
+      <h3>步骤一：完成年度财务结账</h3>
+      <p>汇算清缴前，企业应先完成上一年度的财务结账，编制年度财务报表。确保账务处理完整、准确，所有收入、成本、费用都已入账。</p>
+      
+      <h3>步骤二：梳理纳税调整事项</h3>
+      <p>会计利润与应纳税所得额之间存在差异，需要进行纳税调整。主要调整事项包括：</p>
+      <ul>
+        <li>限额扣除项目的超标部分</li>
+        <li>不得税前扣除的项目</li>
+        <li>免税收入、不征税收入</li>
+        <li>加计扣除项目</li>
+        <li>资产折旧、摊销的税会差异</li>
+        <li>资产减值准备、公允价值变动</li>
+      </ul>
+      
+      <h3>步骤三：填报年度纳税申报表</h3>
+      <p>企业所得税年度纳税申报表包括1张基础信息表、1张主表和若干张明细表。企业应根据实际情况选择需要填报的表单。</p>
+      <p>主要表单包括：</p>
+      <ul>
+        <li>A000000 企业所得税年度纳税申报基础信息表</li>
+        <li>A100000 中华人民共和国企业所得税年度纳税申报表（A类）</li>
+        <li>A101010 一般企业收入明细表</li>
+        <li>A102010 一般企业成本支出明细表</li>
+        <li>A104000 期间费用明细表</li>
+        <li>A105000 纳税调整项目明细表</li>
+        <li>A105050 职工薪酬支出及纳税调整明细表</li>
+        <li>A105080 资产折旧、摊销及纳税调整明细表</li>
+        <li>A107010 免税、减计收入及加计扣除优惠明细表</li>
+        <li>A107040 减免所得税优惠明细表</li>
+      </ul>
+      
+      <h3>步骤四：提交申报并结清税款</h3>
+      <p>申报表填写完成后，通过电子税务局提交申报。如有应补税额，应在5月31日前缴纳；如有多缴税额，可申请退税或抵缴以后年度税款。</p>
+      
+      <h2>四、常见纳税调整事项</h2>
+      <h3>4.1 限额扣除项目</h3>
+      <table>
+        <tr><th>项目</th><th>扣除限额</th><th>超标处理</th></tr>
+        <tr><td>职工福利费</td><td>工资薪金总额的14%</td><td>超标部分不得扣除</td></tr>
+        <tr><td>工会经费</td><td>工资薪金总额的2%</td><td>超标部分不得扣除</td></tr>
+        <tr><td>职工教育经费</td><td>工资薪金总额的8%</td><td>超标部分准予结转以后年度扣除</td></tr>
+        <tr><td>业务招待费</td><td>发生额的60%，且不超过当年销售收入的5‰</td><td>超标部分不得扣除</td></tr>
+        <tr><td>广告费和业务宣传费</td><td>当年销售收入的15%（特殊行业30%）</td><td>超标部分准予结转以后年度扣除</td></tr>
+        <tr><td>公益性捐赠</td><td>年度利润总额的12%</td><td>超标部分准予结转以后3年内扣除</td></tr>
+      </table>
+      
+      <h3>4.2 不得税前扣除的项目</h3>
+      <ul>
+        <li>向投资者支付的股息、红利等权益性投资收益款项</li>
+        <li>企业所得税税款</li>
+        <li>税收滞纳金</li>
+        <li>罚金、罚款和被没收财物的损失</li>
+        <li>非公益性捐赠支出</li>
+        <li>赞助支出</li>
+        <li>未经核定的准备金支出</li>
+        <li>与取得收入无关的其他支出</li>
+      </ul>
+      
+      <h3>4.3 税收优惠项目</h3>
+      <ul>
+        <li><strong>小型微利企业优惠</strong>：年应纳税所得额300万以下，实际税负5%</li>
+        <li><strong>研发费用加计扣除</strong>：未形成无形资产的按100%加计扣除，形成无形资产的按200%摊销</li>
+        <li><strong>高新技术企业优惠</strong>：减按15%税率征收</li>
+        <li><strong>免税收入</strong>：国债利息收入、符合条件的居民企业之间的股息红利等</li>
+      </ul>
+      
+      <h2>五、常见风险点</h2>
+      <h3>风险一：收入确认不完整</h3>
+      <p>企业可能存在未入账收入、延迟确认收入等情况。汇算清缴时应全面梳理各项收入，确保收入确认完整、及时。</p>
+      
+      <h3>风险二：成本费用凭证不合规</h3>
+      <p>税前扣除需要合法有效的凭证。常见问题包括：使用白条入账、取得虚开发票、发票抬头错误、发票内容与实际业务不符等。</p>
+      
+      <h3>风险三：关联交易未按规定申报</h3>
+      <p>存在关联交易的企业，应按规定填报关联业务往来报告表。关联交易定价不公允、未按规定准备同期资料，都可能引发税务风险。</p>
+      
+      <h3>风险四：税收优惠享受不合规</h3>
+      <p>享受税收优惠需要符合条件并留存备查资料。常见问题包括：不符合条件却享受优惠、优惠金额计算错误、备查资料不完整等。</p>
+      
+      <h3>风险五：资产损失未按规定申报</h3>
+      <p>企业发生资产损失，应按规定留存相关证据资料，并在汇算清缴时申报扣除。证据资料不完整、损失金额计算不准确，都可能被纳税调增。</p>
+      
+      <h2>六、汇算清缴后的后续管理</h2>
+      <h3>6.1 留存备查资料</h3>
+      <p>企业享受税收优惠、资产损失扣除等事项，相关证明材料应按规定留存备查，保存期限为10年。税务机关后续管理时会要求提供。</p>
+      
+      <h3>6.2 税务机关后续核查</h3>
+      <p>汇算清缴申报后，税务机关可能通过数据分析、风险评估等方式对企业申报情况进行核查。企业收到税务机关的风险提示或核查通知时，应积极配合，及时说明情况或补充资料。</p>
+      
+      <h3>6.3 多缴税款的处理</h3>
+      <p>汇算清缴后如有多缴税款，企业可以向税务机关申请退税，也可以选择抵缴以后年度应纳税款。</p>
+      
+      <h2>七、代理记账机构的服务价值</h2>
+      <p>企业所得税汇算清缴涉及政策面广、申报表复杂、专业要求高。委托专业代理记账机构办理汇算清缴，可由资深会计和税务师团队进行全面的纳税调整审核，准确填报申报表，确保企业充分享受税收优惠的同时，规避税务风险。</p>
+      <p>代理记账.cn拥有丰富的汇算清缴服务经验，已为数千家企业提供专业的年度所得税申报服务，欢迎咨询合作。</p>
+    `
+  },
+  {
+    id: 8,
+    title: "代理记账收费标准揭秘：如何选择靠谱的代账机构",
+    tag: "行业观察",
+    date: "2026-08-27",
+    views: 2543,
+    excerpt: "代理记账市场价格参差不齐，从几十元到上千元不等。本文揭秘代理记账收费标准的构成因素，分析低价代账的陷阱，并提供选择靠谱代账机构的实用指南。",
+    content: `
+      <p>在选择代理记账服务时，价格往往是企业主最关心的因素之一。然而，代理记账市场价格参差不齐，从每月几十元到上千元不等，让很多企业主眼花缭乱。本文将揭秘代理记账收费标准，帮助企业选择靠谱的代账机构。</p>
+      
+      <h2>一、代理记账收费标准参考</h2>
+      <p>代理记账费用主要受企业类型、业务量、行业特点等因素影响。以下是市场上的常规收费标准参考：</p>
+      <table>
+        <tr><th>企业类型</th><th>月收费区间（元）</th><th>年收费区间（元）</th><th>服务内容</th></tr>
+        <tr><td>小规模纳税人（零申报）</td><td>100-200</td><td>1200-2400</td><td>记账、报税、年报</td></tr>
+        <tr><td>小规模纳税人（有业务）</td><td>200-400</td><td>2400-4800</td><td>记账、报税、票据处理、年报</td></tr>
+        <tr><td>一般纳税人（贸易类）</td><td>400-600</td><td>4800-7200</td><td>记账、报税、发票管理、年报</td></tr>
+        <tr><td>一般纳税人（服务类）</td><td>500-800</td><td>6000-9600</td><td>记账、报税、发票管理、年报</td></tr>
+        <tr><td>一般纳税人（生产/建安类）</td><td>600-1000</td><td>7200-12000</td><td>记账、报税、成本核算、年报</td></tr>
+        <tr><td>外资/进出口企业</td><td>800-1500</td><td>9600-18000</td><td>记账、报税、出口退税、年报</td></tr>
+        <tr><td>个体工商户</td><td>100-300</td><td>1200-3600</td><td>记账、报税、年报</td></tr>
+      </table>
+      
+      <blockquote>
+        <p>注意：以上价格为市场参考价，具体收费因地区、机构、服务内容不同而有所差异。一线城市收费通常高于二三线城市。</p>
+      </blockquote>
+      
+      <h2>二、影响代理记账收费的因素</h2>
+      <h3>2.1 企业纳税人类型</h3>
+      <p>一般纳税人的账务处理和纳税申报比小规模纳税人复杂，收费通常是小规模纳税人的2-3倍。一般纳税人需要进行进项税额抵扣、增值税专用发票管理等，工作量更大。</p>
+      
+      <h3>2.2 企业业务量</h3>
+      <p>业务量直接影响记账工作量。票据量大、银行流水多的企业，需要更多的时间和人力处理账务，收费相应较高。</p>
+      
+      <h3>2.3 行业特点</h3>
+      <p>不同行业的账务处理复杂度不同。例如：</p>
+      <ul>
+        <li>贸易类企业：进销存管理、库存核算较复杂</li>
+        <li>建安类企业：项目核算、跨期收入确认复杂</li>
+        <li>生产类企业：成本核算、制造费用分摊复杂</li>
+        <li>服务类企业：相对简单，主要是收入和费用核算</li>
+      </ul>
+      
+      <h3>2.4 服务内容</h3>
+      <p>基础代理记账服务包括记账和报税。如果企业还需要发票管理、税务筹划、财务分析、工商年报等增值服务，费用会相应增加。</p>
+      
+      <h3>2.5 机构资质和服务水平</h3>
+      <p>正规、有资质的代理记账机构，拥有专业团队和完善的服务流程，收费相对较高。而个人兼职或不正规机构收费较低，但服务质量和安全性无法保障。</p>
+      
+      <h2>三、低价代账的陷阱</h2>
+      <p>市场上不乏"99元代账""0元代账"等低价诱惑，企业主需要警惕以下陷阱：</p>
+      
+      <h3>陷阱一：低价引流，后续加价</h3>
+      <p>一些机构以极低价格吸引客户签约，然后在服务过程中以各种名义加价，如票据费、申报费、年报费等。最终实际支出可能远高于正常价格。</p>
+      
+      <h3>陷阱二：服务缩水，质量堪忧</h3>
+      <p>低价意味着低成本。一些机构为了控制成本，简化账务处理流程，不审核票据、不核对账目，甚至出现漏报、错报的情况，给企业带来税务风险。</p>
+      
+      <h3>陷阱三：实习生做账，缺乏经验</h3>
+      <p>部分低价代账机构大量使用实习生或缺乏经验的会计人员做账，没有资深会计审核，账务处理质量无法保证。</p>
+      
+      <h3>陷阱四：信息泄露，安全隐患</h3>
+      <p>不正规的机构可能缺乏完善的信息安全管理制度，企业财务信息存在泄露风险。甚至有机构利用企业信息进行非法活动。</p>
+      
+      <h3>陷阱五：捆绑销售，强制消费</h3>
+      <p>一些机构在低价代账的同时，捆绑销售其他服务，如商标注册、资质办理等，不购买就不提供代账服务或降低服务质量。</p>
+      
+      <blockquote>
+        <p>案例警示：某企业选择了每月99元的低价代账服务，一年后发现该机构从未为其申报个人所得税，导致企业被税务机关罚款数千元，还影响了纳税信用等级。最终企业不得不花费更高的费用找正规机构补账和处理税务问题。</p>
+      </blockquote>
+      
+      <h2>四、如何选择靠谱的代理记账机构</h2>
+      <h3>4.1 查看资质证照</h3>
+      <p>正规的代理记账机构应具备：</p>
+      <ul>
+        <li>营业执照（经营范围包含"代理记账"）</li>
+        <li>代理记账许可证（财政部门颁发）</li>
+        <li>固定的经营场所</li>
+      </ul>
+      <p>可以通过国家企业信用信息公示系统查询企业资质和信用状况。</p>
+      
+      <h3>4.2 考察专业团队</h3>
+      <p>了解机构的会计团队配置：</p>
+      <ul>
+        <li>是否有注册会计师、税务师等专业人员</li>
+        <li>会计人员的从业经验和专业背景</li>
+        <li>是否有完善的培训和考核机制</li>
+        <li>人员流动率是否过高</li>
+      </ul>
+      
+      <h3>4.3 了解服务流程</h3>
+      <p>正规机构应有标准化的服务流程：</p>
+      <ul>
+        <li>签订正式服务合同，明确服务内容和收费标准</li>
+        <li>专人对接，定期沟通企业经营情况</li>
+        <li>票据交接有记录，账务处理有审核</li>
+        <li>纳税申报及时准确，有申报回执</li>
+        <li>定期提供财务报表和经营分析</li>
+      </ul>
+      
+      <h3>4.4 考察办公环境</h3>
+      <p>有条件的话，可以实地考察机构的办公环境。正规机构通常有固定的办公场所、完善的办公设备和规范的档案管理。而那些在家办公、地址频繁变更的机构需要谨慎选择。</p>
+      
+      <h3>4.5 了解客户口碑</h3>
+      <p>可以通过以下方式了解机构口碑：</p>
+      <ul>
+        <li>查看客户评价和案例</li>
+        <li>向同行业企业了解推荐</li>
+        <li>关注机构的行业资质和荣誉</li>
+      </ul>
+      
+      <h3>4.6 关注服务态度</h3>
+      <p>代理记账是长期服务，沟通顺畅非常重要。靠谱的机构应：</p>
+      <ul>
+        <li>及时响应客户咨询</li>
+        <li>主动提醒税务申报和政策变化</li>
+        <li>耐心解答财税问题</li>
+        <li>出现问题积极配合解决</li>
+      </ul>
+      
+      <h2>五、代理记账服务合同注意事项</h2>
+      <p>签订代理记账服务合同时，应注意以下条款：</p>
+      <ol>
+        <li><strong>服务内容明确</strong>：具体包含哪些服务，哪些是增值服务需另行收费</li>
+        <li><strong>收费标准清晰</strong>：月费/年费金额，付款方式，是否有其他费用</li>
+        <li><strong>服务期限约定</strong>：合同期限，续约和终止条件</li>
+        <li><strong>保密条款</strong>：企业财务信息的保密义务和违约责任</li>
+        <li><strong>责任划分</strong>：因代账机构原因造成的税务处罚如何承担</li>
+        <li><strong>资料交接</strong>：合同终止时财务资料的交接方式和时间</li>
+      </ol>
+      
+      <h2>六、结语</h2>
+      <p>代理记账是企业财税管理的重要环节，选择靠谱的代账机构不仅能节省成本，更能保障企业财税合规。企业主在选择时不应只看价格，更应关注机构的专业性、服务质量和信誉。</p>
+      <p>代理记账.cn拥有十余年行业经验，汇聚注册会计师、税务师专业团队，为企业提供规范、专业、高效的代理记账服务。我们承诺透明收费、品质服务，欢迎企业咨询合作。</p>
+    `
+  }
+];
+
+// ===== 渲染函数 =====
+function renderNewsList() {
+  const featured = document.getElementById('featured-news');
+  const grid = document.getElementById('news-grid');
+  
+  // 第一篇作为特色大卡
+  const feat = articles[0];
+  featured.innerHTML = `
+    <div class="news-card news-card-featured" onclick="showArticle(${feat.id})">
+      <div class="news-card-image">
+        <div class="news-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+      </div>
+      <div class="news-card-body">
+        <span class="news-card-tag">${feat.tag}</span>
+        <h3 class="news-card-title">${feat.title}</h3>
+        <p class="news-card-excerpt">${feat.excerpt}</p>
+        <div class="news-card-meta">
+          <span class="date">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            ${feat.date}
+          </span>
+          <span class="views">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            ${feat.views}
+          </span>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  // 右侧两篇小卡
+  let rightHtml = '';
+  for (let i = 1; i <= 2; i++) {
+    const a = articles[i];
+    rightHtml += `
+      <div class="news-card" onclick="showArticle(${a.id})">
+        <div class="news-card-body" style="padding: 20px 24px;">
+          <span class="news-card-tag">${a.tag}</span>
+          <h3 class="news-card-title" style="font-size: 16px;">${a.title}</h3>
+          <p class="news-card-excerpt" style="-webkit-line-clamp: 2; font-size: 13px;">${a.excerpt}</p>
+          <div class="news-card-meta">
+            <span class="date">${a.date}</span>
+            <span class="views">${a.views} 阅读</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  featured.insertAdjacentHTML('beforeend', rightHtml);
+  
+  // 下方网格 - 剩余文章
+  let gridHtml = '';
+  for (let i = 3; i < articles.length; i++) {
+    const a = articles[i];
+    gridHtml += `
+      <div class="news-card" onclick="showArticle(${a.id})">
+        <div class="news-card-image" style="height: 160px;">
+          <div class="news-card-icon" style="width: 48px; height: 48px;">
+            <svg viewBox="0 0 24 24" style="width: 24px; height: 24px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+        </div>
+        <div class="news-card-body">
+          <span class="news-card-tag">${a.tag}</span>
+          <h3 class="news-card-title" style="font-size: 16px;">${a.title}</h3>
+          <p class="news-card-excerpt" style="-webkit-line-clamp: 2; font-size: 13px;">${a.excerpt}</p>
+          <div class="news-card-meta">
+            <span class="date">${a.date}</span>
+            <span class="views">${a.views} 阅读</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  grid.innerHTML = gridHtml;
+}
+
+// ===== 文章详情 =====
+function showArticle(id) {
+  const article = articles.find(a => a.id === id);
+  if (!article) return;
+  
+  document.getElementById('home').classList.add('hidden');
+  document.getElementById('article-page').classList.add('active');
+  
+  const tags = article.tag.split(/[、,，]/);
+  const tagHtml = tags.map(t => `<span>${t}</span>`).join('');
+  
+  document.getElementById('article-content').innerHTML = `
+    <div class="article-header">
+      <span class="article-tag">${article.tag}</span>
+      <h1 class="article-title">${article.title}</h1>
+      <div class="article-meta">
+        <span class="author">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          代理记账.cn编辑部
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          ${article.date}
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          ${article.views} 阅读
+        </span>
+      </div>
+    </div>
+    <div class="article-content">
+      ${article.content}
+    </div>
+    <div class="article-footer">
+      <div class="article-tags">${tagHtml}</div>
+      <span style="font-size: 13px; color: var(--text-muted);">来源：代理记账.cn</span>
+    </div>
+  `;
+  
+  window.scrollTo(0, 0);
+  location.hash = `#/article/${id}`;
+}
+
+function goHome() {
+  document.getElementById('home').classList.remove('hidden');
+  document.getElementById('article-page').classList.remove('active');
+  location.hash = '#/';
+  window.scrollTo(0, 0);
+}
+
+// ===== 路由 =====
+function handleRoute() {
+  const hash = location.hash;
+  if (hash.startsWith('#/article/')) {
+    const id = parseInt(hash.split('/')[2]);
+    if (id) showArticle(id);
+  } else {
+    goHome();
+  }
+}
+
+window.addEventListener('hashchange', handleRoute);
+
+// ===== 初始化 =====
+renderNewsList();
+handleRoute();
+</script>
+
+</body>
+</html>

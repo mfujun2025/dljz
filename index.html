@@ -30,6 +30,7 @@ body {
   color: var(--text);
   background: var(--cream);
   line-height: 1.7;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {
@@ -843,12 +844,12 @@ a { text-decoration: none; color: inherit; }
       <div class="logo-text">代理记账<span>.cn</span></div>
     </a>
     <nav class="nav">
-      <a href="#/" class="active">首页</a>
-      <a href="#/news">最新资讯</a>
-      <a href="#/services">服务专区</a>
-      <a href="#/about">关于我们</a>
+      <a href="javascript:void(0)" class="active" onclick="goHome()">首页</a>
+      <a href="javascript:void(0)" onclick="navTo('news')">最新资讯</a>
+      <a href="javascript:void(0)" onclick="navTo('services')">服务专区</a>
+      <a href="javascript:void(0)" onclick="navTo('about')">关于我们</a>
     </nav>
-    <a href="#/services" class="header-cta">免费咨询</a>
+    <a href="javascript:void(0)" onclick="navTo('services')" class="header-cta">免费咨询</a>
   </div>
 </header>
 
@@ -881,14 +882,14 @@ a { text-decoration: none; color: inherit; }
   </section>
 
   <!-- 最新资讯 -->
-  <section class="section">
+  <section class="section" id="news">
     <div class="container">
       <div class="section-header">
         <div>
           <h2 class="section-title">最新资讯</h2>
           <div class="section-subtitle">每日更新代理记账与财税政策前沿动态</div>
         </div>
-        <a href="#/news" class="section-more">查看全部 →</a>
+        <a href="javascript:void(0)" onclick="navTo('news')" class="section-more">查看全部 →</a>
       </div>
 
       <div class="news-featured" id="featured-news">
@@ -902,7 +903,7 @@ a { text-decoration: none; color: inherit; }
   </section>
 
   <!-- 服务专区 -->
-  <section class="section services">
+  <section class="section services" id="services">
     <div class="container">
       <div class="section-header">
         <div>
@@ -944,7 +945,7 @@ a { text-decoration: none; color: inherit; }
   </section>
 
   <!-- 关于我们 -->
-  <section class="section about">
+  <section class="section about" id="about">
     <div class="container">
       <div class="about-grid">
         <div class="about-content">
@@ -1040,28 +1041,28 @@ a { text-decoration: none; color: inherit; }
       <div class="footer-col">
         <h4>资讯分类</h4>
         <ul>
-          <li><a href="#/news">政策解读</a></li>
-          <li><a href="#/news">记账实务</a></li>
-          <li><a href="#/news">税务合规</a></li>
-          <li><a href="#/news">工商年报</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('news')">政策解读</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('news')">记账实务</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('news')">税务合规</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('news')">工商年报</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>服务项目</h4>
         <ul>
-          <li><a href="#/services">代理记账</a></li>
-          <li><a href="#/services">税务申报</a></li>
-          <li><a href="#/services">工商注册</a></li>
-          <li><a href="#/services">财税筹划</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('services')">代理记账</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('services')">税务申报</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('services')">工商注册</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('services')">财税筹划</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>关于我们</h4>
         <ul>
-          <li><a href="#/about">平台介绍</a></li>
-          <li><a href="#/about">团队资质</a></li>
-          <li><a href="#/services">联系我们</a></li>
-          <li><a href="#/about">服务承诺</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('about')">平台介绍</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('about')">团队资质</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('services')">联系我们</a></li>
+          <li><a href="javascript:void(0)" onclick="navTo('about')">服务承诺</a></li>
         </ul>
       </div>
     </div>
@@ -2015,6 +2016,27 @@ function goHome() {
   document.getElementById('article-page').classList.remove('active');
   location.hash = '#/';
   window.scrollTo(0, 0);
+  // 更新导航激活状态
+  document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+  document.querySelector('.nav a[href="#/"]').classList.add('active');
+}
+
+function navTo(id) {
+  // 如果在文章详情页，先回到首页
+  if (document.getElementById('article-page').classList.contains('active')) {
+    document.getElementById('home').classList.remove('hidden');
+    document.getElementById('article-page').classList.remove('active');
+  }
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 50);
+  // 更新导航激活状态
+  document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+  const activeLink = document.querySelector('.nav a[onclick="navTo(\'' + id + '\')"]');
+  if (activeLink) activeLink.classList.add('active');
 }
 
 // ===== 路由 =====

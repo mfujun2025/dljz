@@ -844,12 +844,12 @@ a { text-decoration: none; color: inherit; }
       <div class="logo-text">代理记账<span>.cn</span></div>
     </a>
     <nav class="nav">
-      <a href="javascript:void(0)" class="active" onclick="goHome()">首页</a>
-      <a href="javascript:void(0)" onclick="navTo('news')">最新资讯</a>
-      <a href="javascript:void(0)" onclick="navTo('services')">服务专区</a>
-      <a href="javascript:void(0)" onclick="navTo('about')">关于我们</a>
+      <a href="#/" class="active" onclick="goHome()">首页</a>
+      <a href="#news" onclick="ensureHome()">最新资讯</a>
+      <a href="#services" onclick="ensureHome()">服务专区</a>
+      <a href="#about" onclick="ensureHome()">关于我们</a>
     </nav>
-    <a href="javascript:void(0)" onclick="navTo('services')" class="header-cta">免费咨询</a>
+    <a href="#services" onclick="ensureHome()" class="header-cta">免费咨询</a>
   </div>
 </header>
 
@@ -889,7 +889,7 @@ a { text-decoration: none; color: inherit; }
           <h2 class="section-title">最新资讯</h2>
           <div class="section-subtitle">每日更新代理记账与财税政策前沿动态</div>
         </div>
-        <a href="javascript:void(0)" onclick="navTo('news')" class="section-more">查看全部 →</a>
+        <a href="#news" onclick="ensureHome()" class="section-more">查看全部 →</a>
       </div>
 
       <div class="news-featured" id="featured-news">
@@ -1041,28 +1041,28 @@ a { text-decoration: none; color: inherit; }
       <div class="footer-col">
         <h4>资讯分类</h4>
         <ul>
-          <li><a href="javascript:void(0)" onclick="navTo('news')">政策解读</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('news')">记账实务</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('news')">税务合规</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('news')">工商年报</a></li>
+          <li><a href="#news" onclick="ensureHome()">政策解读</a></li>
+          <li><a href="#news" onclick="ensureHome()">记账实务</a></li>
+          <li><a href="#news" onclick="ensureHome()">税务合规</a></li>
+          <li><a href="#news" onclick="ensureHome()">工商年报</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>服务项目</h4>
         <ul>
-          <li><a href="javascript:void(0)" onclick="navTo('services')">代理记账</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('services')">税务申报</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('services')">工商注册</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('services')">财税筹划</a></li>
+          <li><a href="#services" onclick="ensureHome()">代理记账</a></li>
+          <li><a href="#services" onclick="ensureHome()">税务申报</a></li>
+          <li><a href="#services" onclick="ensureHome()">工商注册</a></li>
+          <li><a href="#services" onclick="ensureHome()">财税筹划</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>关于我们</h4>
         <ul>
-          <li><a href="javascript:void(0)" onclick="navTo('about')">平台介绍</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('about')">团队资质</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('services')">联系我们</a></li>
-          <li><a href="javascript:void(0)" onclick="navTo('about')">服务承诺</a></li>
+          <li><a href="#about" onclick="ensureHome()">平台介绍</a></li>
+          <li><a href="#about" onclick="ensureHome()">团队资质</a></li>
+          <li><a href="#services" onclick="ensureHome()">联系我们</a></li>
+          <li><a href="#about" onclick="ensureHome()">服务承诺</a></li>
         </ul>
       </div>
     </div>
@@ -2043,14 +2043,24 @@ function navTo(id) {
 }
 
 // ===== 路由 =====
+function ensureHome() {
+  // 如果在文章详情页，先回到首页，让浏览器能找到锚点元素
+  if (document.getElementById('article-page').classList.contains('active')) {
+    document.getElementById('home').classList.remove('hidden');
+    document.getElementById('article-page').classList.remove('active');
+  }
+  return true;
+}
+
 function handleRoute() {
   const hash = location.hash;
   if (hash.startsWith('#/article/')) {
     const id = parseInt(hash.split('/')[2]);
     if (id) showArticle(id);
-  } else {
+  } else if (hash === '#/' || hash === '') {
     goHome();
   }
+  // 纯锚点（如#news、#services、#about）不处理，由浏览器原生跳转
 }
 
 window.addEventListener('hashchange', handleRoute);
